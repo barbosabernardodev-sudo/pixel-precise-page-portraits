@@ -3,13 +3,14 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Menu, X, Play, Pause, ShieldCheck, ChevronDown, Check } from "lucide-react";
 import portraitSmall from "@/assets/padre-novo-480.webp.asset.json";
 import portraitLarge from "@/assets/padre-novo-960.webp.asset.json";
+import coverSmall from "@/assets/oracoes-capa-480.webp.asset.json";
+import coverLarge from "@/assets/oracoes-capa-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
 const PRICE = "R$ [00,00]";
 const AUDIO_SRC = ""; // arquivo MP3 da prévia
 const PHOTO_2 = "";
-const COVER = "";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -238,7 +239,7 @@ function Index() {
           <h2 className="text-4xl md:text-5xl">Comece a rezar <G>ainda hoje</G></h2>
           <p className="mt-4 text-muted-foreground">Acesso imediato, no seu celular ou computador, quando e onde precisar.</p>
           <div className="mt-10 overflow-hidden rounded-xl border border-gold bg-paper text-left">
-            {COVER ? <img src={COVER} alt="Capa 7 Orações que Purificam" loading="lazy" className="aspect-video w-full object-cover" /> : <Placeholder className="aspect-video" />}
+            <img src={coverLarge.url} srcSet={`${coverSmall.url} 480w, ${coverLarge.url} 712w`} sizes="(min-width: 640px) 574px, calc(100vw - 42px)" alt="Capa 7 Orações que Purificam por Padre Isaque Luz" width={712} height={399} loading="lazy" decoding="async" className="h-auto w-full" />
             <div className="p-7">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Orações guiadas</p>
               <h3 className="mt-2 text-3xl">7 Orações que Purificam</h3>
