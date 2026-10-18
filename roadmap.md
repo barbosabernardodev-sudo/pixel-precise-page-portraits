@@ -1,2 +1,2 @@
-- [x] Set the product price to R$ 25,00.
+- [x] Set the launch offer from R$ 67,90 to R$ 27,99.
 - [x] Align the currency symbol with the price digits and verify the display.
