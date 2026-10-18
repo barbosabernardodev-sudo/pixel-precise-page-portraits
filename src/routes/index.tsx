@@ -10,7 +10,7 @@ import aboutLarge from "@/assets/padre-sobre-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
-const PRICE = "R$ [00,00]";
+export const PRICE = "R$ 25,00";
 const AUDIO_SRC = ""; // arquivo MP3 da prévia
 
 export const Route = createFileRoute("/")({
