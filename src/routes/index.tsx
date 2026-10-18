@@ -251,7 +251,7 @@ function Index() {
                 ))}
               </ul>
               <div className="mt-8 text-center">
-                <p className="font-display text-5xl">{PRICE}</p>
+                <p className="font-display text-5xl lining-nums tabular-nums">{PRICE}</p>
                 <p className="mb-6 text-sm text-muted-foreground">pagamento único · acesso vitalício</p>
                 <Buy label="Quero meu acesso" wide />
               </div>
