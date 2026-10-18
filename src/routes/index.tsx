@@ -5,12 +5,13 @@ import portraitSmall from "@/assets/padre-novo-480.webp.asset.json";
 import portraitLarge from "@/assets/padre-novo-960.webp.asset.json";
 import coverSmall from "@/assets/oracoes-capa-480.webp.asset.json";
 import coverLarge from "@/assets/oracoes-capa-960.webp.asset.json";
+import aboutSmall from "@/assets/padre-sobre-480.webp.asset.json";
+import aboutLarge from "@/assets/padre-sobre-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
 const PRICE = "R$ [00,00]";
 const AUDIO_SRC = ""; // arquivo MP3 da prévia
-const PHOTO_2 = "";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -207,7 +208,7 @@ function Index() {
       {/* 5 */}
       <section id="sobre" className="bg-cream px-5 py-20">
         <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-2">
-          <Reveal>{PHOTO_2 ? <img src={PHOTO_2} alt="Padre Isaque Luz" loading="lazy" className="aspect-[4/5] w-full rounded-lg object-cover" /> : <Placeholder className="aspect-[4/5] rounded-lg" />}</Reveal>
+          <Reveal><img src={aboutLarge.url} srcSet={`${aboutSmall.url} 480w, ${aboutLarge.url} 768w`} sizes="(min-width: 1024px) 488px, (min-width: 768px) calc((100vw - 88px) / 2), calc(100vw - 40px)" alt="Padre Isaque Luz diante de uma fonte em uma praça" width={768} height={1376} loading="lazy" decoding="async" className="aspect-[4/5] w-full rounded-lg object-cover object-center" /></Reveal>
           <Reveal>
             <p className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold"><Cross />Sobre</p>
             <h2 className="text-4xl md:text-5xl">Quem guia estas <G>orações</G></h2>
