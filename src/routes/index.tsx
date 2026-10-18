@@ -10,7 +10,8 @@ import aboutLarge from "@/assets/padre-sobre-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
-export const PRICE = "R$ 25,00";
+export const ORIGINAL_PRICE = "R$ 67,90";
+export const PRICE = "R$ 27,99";
 const AUDIO_SRC = ""; // arquivo MP3 da prévia
 
 export const Route = createFileRoute("/")({
@@ -151,7 +152,7 @@ function Index() {
             </div>
           )}
         </nav>
-        <div className="bg-wine py-1 text-center text-xs font-bold uppercase tracking-[0.2em] text-cream">Oferta de lançamento</div>
+        <div className="bg-wine px-3 py-1 text-center text-xs font-bold uppercase text-cream">Oferta de lançamento · De {ORIGINAL_PRICE} por {PRICE}</div>
       </header>
 
       {/* 1 Topo */}
@@ -251,7 +252,8 @@ function Index() {
                 ))}
               </ul>
               <div className="mt-8 text-center">
-                <p className="font-display text-5xl lining-nums tabular-nums">{PRICE}</p>
+                <p className="text-lg lining-nums tabular-nums text-muted-foreground">De <del>{ORIGINAL_PRICE}</del></p>
+                <p className="mt-1 flex flex-wrap items-baseline justify-center gap-2 lining-nums tabular-nums"><span className="text-lg">por</span><span className="font-display text-5xl">{PRICE}</span></p>
                 <p className="mb-6 text-sm text-muted-foreground">pagamento único · acesso vitalício</p>
                 <Buy label="Quero meu acesso" wide />
               </div>
