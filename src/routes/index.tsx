@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Menu, X, Play, Pause, ShieldCheck, ChevronDown, Check } from "lucide-react";
-import portraitSmall from "@/assets/padre-retrato-480.webp.asset.json";
-import portraitLarge from "@/assets/padre-retrato-960.webp.asset.json";
+import portraitSmall from "@/assets/padre-novo-480.webp.asset.json";
+import portraitLarge from "@/assets/padre-novo-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
@@ -165,7 +165,7 @@ function Index() {
           </Reveal>
           <Reveal className="mx-auto w-full max-w-md">
             <div className="top-portrait overflow-hidden rounded-t-full rounded-b-lg border border-gold p-1.5">
-              <img src={portraitLarge.url} srcSet={`${portraitSmall.url} 480w, ${portraitLarge.url} 960w`} sizes="(min-width: 768px) 448px, calc(100vw - 56px)" alt="Padre Isaque Luz em oração" width={960} height={960} loading="eager" fetchPriority="high" decoding="async" className="aspect-[4/5] w-full rounded-t-full rounded-b object-cover object-center" />
+              <img src={portraitLarge.url} srcSet={`${portraitSmall.url} 480w, ${portraitLarge.url} 944w`} sizes="(min-width: 768px) 448px, calc(100vw - 56px)" alt="Padre Isaque Luz em oração" width={944} height={1120} loading="eager" fetchPriority="high" decoding="async" className="aspect-[4/5] w-full rounded-t-full rounded-b object-cover object-center" />
             </div>
           </Reveal>
         </div>
