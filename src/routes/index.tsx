@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Menu, X, Play, Pause, ShieldCheck, ChevronDown, Check } from "lucide-react";
+import portraitSmall from "@/assets/padre-retrato-480.webp.asset.json";
+import portraitLarge from "@/assets/padre-retrato-960.webp.asset.json";
 
 // Substitua pelos valores reais
 const CHECKOUT_URL = "#"; // [COLE AQUI O LINK DO CHECKOUT]
 const PRICE = "R$ [00,00]";
 const AUDIO_SRC = ""; // arquivo MP3 da prévia
-const PHOTO_1 = "";
 const PHOTO_2 = "";
 const COVER = "";
 
@@ -162,9 +163,9 @@ function Index() {
             <p className="mt-3 text-sm text-cream/60">Acesso imediato · Garantia de 7 dias</p>
             <Player audioRef={audioRef} />
           </Reveal>
-          <Reveal className="mx-auto w-full max-w-sm">
-            <div className="overflow-hidden rounded-t-full border border-gold p-2">
-              {PHOTO_1 ? <img src={PHOTO_1} alt="Padre Isaque Luz" loading="eager" className="aspect-[3/4] w-full rounded-t-full object-cover" /> : <Placeholder className="aspect-[3/4] rounded-t-full" />}
+          <Reveal className="mx-auto w-full max-w-md">
+            <div className="top-portrait overflow-hidden rounded-t-full rounded-b-lg border border-gold p-1.5">
+              <img src={portraitLarge.url} srcSet={`${portraitSmall.url} 480w, ${portraitLarge.url} 960w`} sizes="(min-width: 768px) 448px, calc(100vw - 56px)" alt="Padre Isaque Luz em oração" width={960} height={960} loading="eager" fetchPriority="high" decoding="async" className="aspect-[4/5] w-full rounded-t-full rounded-b object-cover object-center" />
             </div>
           </Reveal>
         </div>

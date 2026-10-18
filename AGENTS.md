@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Uploaded page photography uses CDN asset pointers with responsive WebP sources to keep downloads small without changing the original subject.

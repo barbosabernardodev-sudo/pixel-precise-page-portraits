@@ -36,7 +36,10 @@
   --primary-foreground: var(--cafe);
   --muted-foreground: #4A5663;
   --border: color-mix(in oklab, var(--gold) 45%, transparent);
+  --shadow-portrait: 0 16px 40px -16px color-mix(in oklab, var(--cafe) 65%, transparent);
 }
+
+.top-portrait { box-shadow: var(--shadow-portrait); }
 
 @layer base {
   * { border-color: var(--color-border); }
