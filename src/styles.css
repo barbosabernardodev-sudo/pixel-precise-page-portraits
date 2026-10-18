@@ -23,18 +23,18 @@
 
 :root {
   --radius: 0.5rem;
-  --cafe: oklch(0.2 0.022 55);
-  --gold: oklch(0.72 0.11 85);
-  --cream: oklch(0.955 0.015 85);
-  --cream-deep: oklch(0.915 0.025 80);
-  --paper: oklch(0.985 0.006 85);
-  --ink: oklch(0.25 0.025 55);
-  --wine: oklch(0.36 0.11 25);
+  --cafe: #0F1E2E;
+  --gold: #C9A24B;
+  --cream: #F4F1EA;
+  --cream-deep: #E9E4D8;
+  --paper: #FAF8F3;
+  --ink: #1F2933;
+  --wine: #1D3A57;
   --background: var(--cream);
   --foreground: var(--ink);
   --primary: var(--gold);
   --primary-foreground: var(--cafe);
-  --muted-foreground: oklch(0.45 0.025 60);
+  --muted-foreground: #4A5663;
   --border: color-mix(in oklab, var(--gold) 45%, transparent);
 }
 
