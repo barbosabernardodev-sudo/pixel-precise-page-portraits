@@ -224,7 +224,7 @@ function Index() {
           <div className="mt-12 space-y-4">
             {oracoes.map(([t, d], i) => (
               <Reveal key={t} className="flex items-start gap-5 rounded-lg border border-gold/40 bg-cream p-5">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold font-display text-xl text-cafe">{i + 1}</span>
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold font-sans text-2xl font-bold leading-none tabular-nums text-cafe">{i + 1}</span>
                 <div className="min-w-0"><h3 className="font-sans text-base font-bold">{t}</h3><p className="text-muted-foreground">{d}</p></div>
               </Reveal>
             ))}
