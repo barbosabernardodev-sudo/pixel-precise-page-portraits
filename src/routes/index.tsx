@@ -168,7 +168,7 @@ function Index() {
           </Reveal>
           <Reveal className="mx-auto w-full max-w-md">
             <div className="top-portrait overflow-hidden rounded-t-full rounded-b-lg border border-gold p-1.5">
-              <img src={portraitLarge.url} srcSet={`${portraitSmall.url} 480w, ${portraitLarge.url} 944w`} sizes="(min-width: 768px) 448px, calc(100vw - 56px)" alt="Padre Isaque Luz em oração" width={944} height={1120} loading="eager" fetchPriority="high" decoding="async" className="aspect-[4/5] w-full rounded-t-full rounded-b object-cover object-center" />
+              <img src="https://i.postimg.cc/W3c2ZGgT/padre-1.jpg" alt="Padre Isaque Luz" className="w-full h-auto object-cover" />
             </div>
           </Reveal>
         </div>
@@ -209,7 +209,7 @@ function Index() {
       {/* 5 */}
       <section id="sobre" className="bg-cream px-5 py-20">
         <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-2">
-          <Reveal><img src={aboutLarge.url} srcSet={`${aboutSmall.url} 480w, ${aboutLarge.url} 768w`} sizes="(min-width: 1024px) 488px, (min-width: 768px) calc((100vw - 88px) / 2), calc(100vw - 40px)" alt="Padre Isaque Luz diante de uma fonte em uma praça" width={768} height={1376} loading="lazy" decoding="async" className="aspect-[4/5] w-full rounded-lg object-cover object-center" /></Reveal>
+          <Reveal><img src="https://i.postimg.cc/tTGX63W7/Gemini-Generated-Image-4786ll4786ll4786.jpg" alt="Ilustração Secundária" className="w-full h-auto object-cover rounded-lg" /></Reveal>
           <Reveal>
             <p className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold"><Cross />Sobre</p>
             <h2 className="text-4xl md:text-5xl">Quem guia estas <G>orações</G></h2>
@@ -240,9 +240,7 @@ function Index() {
           <Tag>Oferta</Tag>
           <h2 className="text-4xl md:text-5xl">Comece a rezar <G>ainda hoje</G></h2>
           <p className="mt-4 text-muted-foreground">Acesso imediato, no seu celular ou computador, quando e onde precisar.</p>
-          <div className="mt-10 overflow-hidden rounded-xl border border-gold bg-paper text-left">
-            <img src={coverLarge.url} srcSet={`${coverSmall.url} 480w, ${coverLarge.url} 712w`} sizes="(min-width: 640px) 574px, calc(100vw - 42px)" alt="Capa 7 Orações que Purificam por Padre Isaque Luz" width={712} height={399} loading="lazy" decoding="async" className="h-auto w-full" />
-            <div className="p-7">
+          <div className="mt-10 overflow-hidden rounded-xl border border-gold bg-paper text-left"><Reveal><img src="https://i.postimg.cc/ydCVRmc1/7-Oracoes-que-Purificam.jpg" alt="7 Orações que Purificam" className="w-full h-auto object-cover rounded-lg" /></Reveal>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">Orações guiadas</p>
               <h3 className="mt-2 text-3xl">7 Orações que Purificam</h3>
               <p className="text-muted-foreground">Orações guiadas pelo Padre Isaque Luz</p>
